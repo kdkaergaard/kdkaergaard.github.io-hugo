@@ -14,7 +14,7 @@ languageCode = "da-dk"
 language = "da"
 theme = "vncnt-hugo"
 title = "Kristian Dahl Kærgaard"
-publishDir = "public"
+publishDir = "docs"
 
 [blackfriday]
   extensions = ["hardLineBreak"]
