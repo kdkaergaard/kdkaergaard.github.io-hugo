@@ -1,0 +1,37 @@
+baseURL = "https://www.krisk.dk/"
+# include content marked as draft
+buildDrafts = false
+# include content with publishdate in the future
+buildFuture = false
+# include content already expired
+buildExpired = false
+# enable this to make all relative URLs relative to content root. Note that this does not affect absolute URLs.
+relativeURLs = false
+disableRSS = true
+enableRobotsTXT = true
+editor = "nano"
+languageCode = "da-dk"
+language = "da"
+theme = "vncnt-hugo"
+title = "Kristian Dahl Kærgaard"
+publishDir = "public"
+
+[blackfriday]
+  extensions = ["hardLineBreak"]
+
+[permalinks]
+  fixed = ":title/"
+  posts = "posts/:slug/"
+
+[params]
+  author = "Kristian Dahl Kærgaard"
+  email = ""
+  description = "Personlig side og Visitkort"
+  bio = ""
+  avatar = "img/avatar.png"
+  favicon = "img/favicon.ico"
+  error404 = "There is no such page."
+
+  [params.contact]
+    github-square = "https://github.com/kdkaergaard"
+    linkedin = "https://www.linkedin.com/in/kdkaergaard"
